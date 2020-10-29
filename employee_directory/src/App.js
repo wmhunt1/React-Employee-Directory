@@ -1,4 +1,5 @@
 import React from "react";
+import employees from "./data/employees.json";
 
 function App ()
 {

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Michael Scott",
+        "department": "Sales"
+    },
+    {
+        "id": 2,
+        "name": "Dwight Schrute",
+        "department": "Sales"
+    },
+    {
+        "id": 3,
+        "name": "Jim Halpet",
+        "department": "Sales"
+    },
+    {
+        "id": 4,
+        "name": "Maurice Moss",
+        "department": "IT"
+    },
+    {
+        "id": 5,
+        "name": "Roy Trennaman",
+        "department": "IT"
+    },
+    {
+        "id": 6,
+        "name": "Don Draper",
+        "department": "Marketing"
+    }
+]
