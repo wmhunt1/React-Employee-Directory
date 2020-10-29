@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "./components/Table";
-//import employees from "./data/employees.json";
+import employees from "./data/employees.json";
 
 function App() {
     return (
