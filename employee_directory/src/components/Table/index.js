@@ -1,24 +1,20 @@
 import React, { Component } from 'react'
 import "./style.css";
+import employees from "../employees.json";
 
 class Table extends Component {
    constructor(props) {
       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
-      this.state = { //state is by default an object
-         employees: [
-            { id: 1, name: 'Michael Scott'},
-            { id: 2, name: 'Dwight Schrute'},
-            { id: 3, name: 'Jim Halpert'}
-         ]
-      }
+      this.state = {employees};
    }
    renderTableData() {
     return this.state.employees.map((employee, index) => {
-       const { id, name} = employee //destructuring
+       const { id, name, department} = employee //destructuring
        return (
           <tr key={id}>
              <td>{id}</td>
              <td>{name}</td>
+             <td>{department}</td>
           </tr>
        )
     })
