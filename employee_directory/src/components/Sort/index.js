@@ -1,7 +1,5 @@
-//import React from "react";
 import React, { useState, useEffect } from 'react';
 import employees from "../employees.json";
-// import Table from "../Table";
 
 // function sortByProperty(property) {
 //     return function (a, b) {
@@ -23,7 +21,7 @@ function Sort() {
         const types = {
           id: 'id',
           name: 'name',
-          department: 'department',
+          department: 'department'
         };
         const sortProperty = types[type];
         const sorted = [...employees].sort((a, b) => b[sortProperty] - a[sortProperty]);
@@ -41,7 +39,7 @@ function Sort() {
           <option value="name">Name</option>
           <option value="department">Department</option>
         </select>
-  
+{/* shows data sorting on these but not on table */}
         {/* {data.map(employee => (
           <div key={employee.id} style={{ margin: '30px' }}>
             <div>{`ID: ${employee.id}`}</div>
@@ -49,7 +47,6 @@ function Sort() {
             <div>{`Department: ${employee.department}`}</div>
           </div>
         ))} */}
-        {/* <Table/> */}
       </div>
     );
   }
