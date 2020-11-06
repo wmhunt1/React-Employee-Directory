@@ -3,5 +3,13 @@
     { "id": 2, "name": "Dwight Schrute", "department": "Sales"},
     { "id": 3, "name": "Jim Halpert", "department": "Sales"},
     { "id": 4, "name": "Maurice Moss", "department": "IT"},
-    { "id": 5, "name": "Don Draper", "department": "Marketing"}
+    { "id": 5, "name": "Don Draper", "department": "Marketing"},
+    { "id": 6, "name": "Roy Trenneman", "department": "IT"},
+    { "id": 7, "name": "Jen Barber", "department": "IT"},
+    { "id": 8, "name": "Scruffy the Janitor", "department": "Janitorial"},
+    { "id": 9, "name": "Hermes Conrad", "department": "Accounting"},
+    { "id": 10, "name": "Tony Stark", "department": "Engineering"},
+    { "id": 11, "name": "Geordi LaForge", "department": "Engineering"},
+    { "id": 12, "name": "Phil Philson", "department": "Marketing"},
+    { "id": 13, "name": "Mike Mikeson", "department": "Accounting"}
  ]
