@@ -3,17 +3,6 @@ import React, { Component } from 'react'
 import "./style.css";
 import employees from "../employees.json";
 
-function sortByProperty(property){  
-   return function(a,b){  
-      if(a[property] > b[property])  
-         return 1;  
-      else if(a[property] < b[property])  
-         return -1;  
-  
-      return 0;  
-   }  
-}
-employees.sort(sortByProperty("name")); //sort according to pId 
 class Table extends Component {
    constructor(props) {
       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
@@ -42,7 +31,6 @@ class Table extends Component {
  render() {
     return (
        <div>
-          {/* <h1 id='title'>React Dynamic Table</h1> */}
           <table id='employees'>
              <tbody>
                 <tr>{this.renderTableHeader()}</tr>

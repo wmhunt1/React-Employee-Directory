@@ -3,7 +3,7 @@ import React from "react";
 function Filter(){
     return(
         <div>
-            <label for="filter">Filter Employees</label>
+            <label for="filter">Filter Employees </label>
             <input></input>
         </div>
     )

@@ -8,9 +8,9 @@ function App() {
     return (
         <div>
             <h1 id = "title">Employee Directory</h1>
-            <Table/>
             <Sort/>
             <Filter/>
+            <Table/>
         </div>
     );
 }
