@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import employees from "../employees.json";
+// import Table from "../Table";
 
 // function sortByProperty(property) {
 //     return function (a, b) {
@@ -14,14 +15,14 @@ import employees from "../employees.json";
 // employees.sort(sortByProperty("id"));
 function Sort() {
     const [data, setData] = useState([]);
-    const [sortType, setSortType] = useState('id');
+    const [sortType, setSortType] = useState('name');
   
     useEffect(() => {
       const sortArray = type => {
         const types = {
           id: 'id',
           name: 'name',
-          department: 'department'
+          department: 'department',
         };
         const sortProperty = types[type];
         const sorted = [...employees].sort((a, b) => b[sortProperty] - a[sortProperty]);
@@ -39,6 +40,7 @@ function Sort() {
           <option value="name">Name</option>
           <option value="department">Department</option>
         </select>
+        {/* <Table/> */}
 {/* shows data sorting on these but not on table */}
         {/* {data.map(employee => (
           <div key={employee.id} style={{ margin: '30px' }}>
