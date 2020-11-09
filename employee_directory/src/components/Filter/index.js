@@ -9,21 +9,26 @@ function Filter() {
   };
   React.useEffect(() => {
     const results = employees.filter(employee =>
-      employee.toLowerCase().includes(searchTerm)
+      employees.includes(searchTerm)
     );
     setSearchResults(results);
   }, [searchTerm]);
   return (
     <div className="filter">
+       <label>Filter Employees </label>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Filter"
         value={searchTerm}
         onChange={handleChange}
       />
       <ul>
-        {searchResults.map(item => (
-          <li>{item}</li>
+        {searchResults.map(employee => (
+          <div key={employee.id} style={{ margin: '30px' }}>
+            <div>{`ID: ${employee.id}`}</div>
+            <div>{`Name: ${employee.name}`}</div>
+            <div>{`Department: ${employee.department}`}</div>
+          </div>
         ))}
       </ul>
     </div>
