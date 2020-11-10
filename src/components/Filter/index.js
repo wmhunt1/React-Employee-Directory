@@ -27,7 +27,8 @@ function Filter (){
               <p>{`Name: ${employee.name}`}</p>
               <p>{`Department: ${employee.dept}`}</p>
             </div>
-          ))
+          )
+          )
         }
       </div>
     )

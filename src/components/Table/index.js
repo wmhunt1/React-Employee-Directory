@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 //import React from 'react'
 import "./style.css";
 import employees from "../employees.json";
+//to see if putting it here worked
+// import Filter from "../Filter";
+// import Sort from "../Sort";
 
 class Table extends Component {
    constructor(props) {
@@ -31,6 +34,8 @@ class Table extends Component {
  render() {
     return (
        <div>
+         {/* <Filter/>
+          <Sort/> */}
           <table id='employees'>
              <tbody>
                 <tr>{this.renderTableHeader()}</tr>
