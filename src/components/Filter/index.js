@@ -1,38 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import employees from "../employees.json";
 
-function Filter() {
-  const [searchTerm, setSearchTerm] = React.useState();
-  const [searchResults, setSearchResults] = React.useState([]);
-  const handleChange = e => {
-    setSearchTerm(e.target.value);
-  };
-  React.useEffect(() => {
-    const results = employees.filter(employee =>
-      employees.includes(searchTerm)
-    );
-    setSearchResults(results);
-  }, [searchTerm]);
-  return (
-    <div className="filter">
-       <label>Filter Employees </label>
-      <input
-        type="text"
-        placeholder="Filter"
-        value={searchTerm}
-        onChange={handleChange}
-      />
-      <ul>
-        {searchResults.map(employee => (
-          <div key={employee.id} style={{ margin: '30px' }}>
-            <div>{`ID: ${employee.id}`}</div>
-            <div>{`Name: ${employee.name}`}</div>
-            <div>{`Department: ${employee.department}`}</div>
-          </div>
-        ))}
-      </ul>
-    </div>
-  );
+//works, just need to tie it all together
+function Filter (){
+    const [value, setValue] = useState('')
+  
+    return (
+      <div>
+        <label>Filter Employees </label>
+        <input id = "filter"
+          type="text"
+          value={value} 
+          onChange={e => setValue(e.target.value)} 
+        />
+  
+        {employees
+          .filter(employee => {
+            if (!value) return true
+            if (employee.name.includes(value)) {
+              return true
+            }
+          })
+          .map(employee => (
+            <div>
+              <p>{`ID: ${employee.id}`}</p>
+              <p>{`Name: ${employee.name}`}</p>
+              <p>{`Department: ${employee.dept}`}</p>
+            </div>
+          ))
+        }
+      </div>
+    )
 }
-
 export default Filter;

@@ -9,7 +9,9 @@ function App() {
         <div>
             <h1 id = "title">Employee Directory</h1>
             <Sort/>
+            <br></br>
             <Filter/>
+            <br></br>
             <Table/>
         </div>
     );
