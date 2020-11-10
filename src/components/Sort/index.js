@@ -23,7 +23,7 @@ function Sort() {
           id: 'id',
           name: 'name',
           //switched to dept to see if will sort
-          department: 'dept',
+          dept: 'dept',
         };
         const sortProperty = types[type];
         const sorted = [...employees].sort((a, b) => a[sortProperty] - b[sortProperty]);

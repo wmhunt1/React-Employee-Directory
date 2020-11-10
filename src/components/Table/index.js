@@ -10,12 +10,12 @@ class Table extends Component {
    }
    renderTableData() {
     return employees.map((employee) => {
-      const { id, name, department} = employee //destructuring
+      const { id, name, dept} = employee //destructuring
        return (
           <tr key={id}>
              <td>{id}</td>
              <td>{name}</td>
-             <td>{department}</td>
+             <td>{dept}</td>
           </tr>
        )
     })
