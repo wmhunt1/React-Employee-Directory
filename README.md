@@ -1,6 +1,8 @@
 # React-Employee-Directory
 ## Description
 An employee directory made using react and states.
+Repo: https://github.com/wmhunt1/React-Employee-Directory
+Deployed Link: https://wmhunt1.github.io/React-Employee-Directory/
 ## Installations
 Clone the repo and use npm install. If not working you will also need to use 
 npm install react-scripts --save
