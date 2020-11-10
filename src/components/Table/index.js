@@ -9,8 +9,8 @@ class Table extends Component {
       this.state = {employees};
    }
    renderTableData() {
-    return this.state.employees.map((employee, index) => {
-       const { id, name, department} = employee //destructuring
+    return employees.map((employee) => {
+      const { id, name, department} = employee //destructuring
        return (
           <tr key={id}>
              <td>{id}</td>

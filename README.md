@@ -1,5 +1,4 @@
 # React-Employee-Directory
-placeholder
 ## Description
 ## Installations
 ## Usage
